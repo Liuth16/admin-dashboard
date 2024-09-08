@@ -80,11 +80,12 @@
     grid-template-columns: repeat(2, minmax(150px,1fr));
     gap: 10px;
     place-items: center;
+    padding: 1rem;
+    background-color: rgb(226, 232, 240);
   }
 
   .projects .card{
-    background-color: green;
-    color: black;
+    background-color: rgb(240, 180, 41);
     height: 100%;
     width: 100%;
     max-width: 600px;
@@ -97,6 +98,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
+    background-color:  rgb(226, 232, 240);
   }
 
   .announce{
@@ -107,14 +109,12 @@
   }
 
   .trending {
-    background-color: blue;
     color: black;
     height: 100%;
     width: 100%;
   }
 
   .card .flex-div{
-    border: solid black 1px;
     width: 95%;
     height: 100%;
     background-color: beige;
@@ -125,9 +125,10 @@
 
   .text {
     flex: 1;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 2rem;
     margin-left: 1rem;
+    color: rgb(99, 99, 99);
   }
 
   .title {
@@ -186,6 +187,86 @@
     margin: 6rem 0;
   }
 
-  svg {
-    color: white;
+  .announce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 1rem;
+    background-color: rgb(226, 232, 240);
   }
+
+  .ann {
+    flex-grow: 0.1;
+    background-color: rgb(226, 232, 240);
+  }
+
+  .tr-ann {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    flex: 1;
+    font-size: 1rem;
+    flex-grow: 1;
+    padding: 1rem;
+  }
+
+ .announce .ann-title{
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  .tr-ann p {
+    color: rgb(99, 99, 99);
+  }
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.trend {
+    font-size: 3rem;
+    background-color:  rgb(226, 232, 240);
+    width: 100%;
+    margin-left: 1rem;
+}
+
+  .avatar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.avatar img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.users{
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
